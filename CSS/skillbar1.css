@@ -1,0 +1,69 @@
+#circleBar {
+    text-align: center;
+    font-family: tahoma;
+    border-radius: 20px;
+    background-color: white;
+    height: 350px;
+}
+
+#circleBar .round {
+    min-height: 255px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#circleBar .round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    transform: translate(-50%);
+    font-size: 20px;
+    color: #212121;
+    font-weight: 100;
+}
+
+#circleBar span {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    margin-left: -15px;
+}
+
+#circleBar span i {
+    color: #ff5c5c;
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+.col1 {
+    position: absolute;
+    top: 30px;
+    height: 100px;
+    width: 100px;
+    margin-left: 40px;
+}
+
+.col2 {
+    position: absolute;
+    top: 30px;
+    margin-left: 200px;
+    height: 100px;
+    width: 100px;
+}
+
+.col3 {
+    position: absolute;
+    top: 170px;
+    margin-left: 40px;
+    height: 100px;
+    width: 100px;
+}
+
+.col4 {
+    position: absolute;
+    top: 170px;
+    margin-left: 200px;
+    height: 100px;
+    width: 100px;
+}

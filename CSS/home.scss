@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  // 照片輪播
+  div.continue_pic {
+    border: solid 3px rgb(128, 128, 128);
+    border-radius: 15px;
+    width: 95%;
+    height: 88vh;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+
+    ul.S0 {
+      list-style: none;
+      div {
+        background-size: cover;
+        background-position: center;
+        //設定動畫輪播
+        filter: alpha(opacity=0);
+        animation: round 30s ease-in-out infinite;
+        li.slide {
+          position: relative;
+          img {
+            border-radius: 12px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 87.5vh;
+          }
+        }
+      }
+
+      div:nth-child(3) {
+        animation-delay: 0s;
+      }
+
+      div:nth-child(2) {
+        animation-delay: 5s;
+      }
+
+      div:nth-child(1) {
+        animation-delay: 10s;
+      }
+    }
+  }
+  // 自我介紹
+  div.self {
+    width: 90%;
+    //border: solid 1px red;
+
+    div.contain {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      section.left {
+        width: 25%;
+        margin-top: 2rem;
+        div.title {
+          h3 {
+            font-size: 25px;
+          }
+          hr {
+            width: 100px;
+            border: solid 2px #9c9c9cef;
+            margin-bottom: 10px;
+          }
+        }
+        div.np {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: column;
+          border: solid 3px #9c9c9cef;
+          border-radius: 10px;
+          margin-right: 10px;
+          div.image-container {
+            overflow: hidden;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            //border: solid 1px black;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            img.personal {
+              width: 15vw;
+              height: 15vw;
+              transition: all 0.3s;
+            }
+            img.personal:hover {
+              transform: scale(1.2);
+            }
+          }
+
+          p.name {
+            font-family: sans-serif;
+            font-size: 26px;
+            font-weight: bold;
+            color: #9c9c9cef;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      section.right {
+        //border: solid 1px black;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 1rem;
+        margin-top: 2rem;
+
+        div {
+          p.intro {
+            font-family: Microsoft JhengHei;
+            font-weight: bold;
+            font-size: 25px;
+            color: #9c9c9cef;
+            line-height: 40px;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+          }
+          div.inform {
+            p {
+              font-family: Microsoft JhengHei;
+              font-weight: bold;
+              font-size: 20px;
+              color: #9c9c9cef;
+              line-height: 30px;
+              letter-spacing: 2px;
+            }
+          }
+          div.inform-link {
+            display: flex;
+            margin-top: 1rem;
+            a {
+              img {
+                width: 3em;
+                margin-right: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes round {
+  4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+  }
+  28% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 10秒靜止*/
+  }
+  32% {
+    opacity: 0;
+    filter: alpha(opacity=100);
+    /* 10-11秒淡出*/
+  }
+}
+
+// -----輪播照片
+//當螢幕畫面太小時把上方輪播圖片高度變小
+@media screen and (max-width: 900px) {
+  main {
+    div.continue_pic {
+      height: 75vh;
+      ul.S0 {
+        list-style: none;
+        div {
+          //設定動畫輪播
+          li.slide {
+            img {
+              width: 100%;
+              height: 74.5vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  main {
+    div.continue_pic {
+      height: 50vh;
+      ul.S0 {
+        list-style: none;
+        div {
+          //設定動畫輪播
+          li.slide {
+            img {
+              width: 100%;
+              height: 49.5vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    div.continue_pic {
+      height: 30vh;
+      ul.S0 {
+        list-style: none;
+        div {
+          //設定動畫輪播
+          li.slide {
+            img {
+              width: 100%;
+              height: 29.5vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// -----標題設定
+// 當畫面太小把Logo置中
+// 並把連結改成下拉選單
+// -----自我介紹
+//當螢幕畫面變小時
+//把自我介紹圖片變大
+//調整自我介紹文字
+@media screen and (max-width: 1400px) {
+  main {
+    div.self {
+      div.contain {
+        display: flex;
+        justify-content: center;
+        margin-top: -7rem;
+        section.left {
+          position: relative;
+          margin-top: 5rem;
+          div.title {
+            position: absolute;
+            //left: 2rem;
+            top: 3rem;
+          }
+          width: 100%;
+          div.np {
+            margin-top: 5rem;
+            margin-bottom: -8rem;
+            border: 0;
+            div.image-container {
+              width: 30vw;
+              height: 30vw;
+
+              img.personal {
+                width: 30vw;
+                height: 30vw;
+                transition: all 0.3s;
+              }
+              img.personal:hover {
+                transform: scale(1.2);
+              }
+            }
+
+            p {
+              //position: absolute;
+              font-size: 10px;
+              left: 220px;
+            }
+          }
+        }
+        section.right {
+          flex-basis: 400px;
+          margin-top: 10rem;
+          flex-grow: 1;
+          div {
+            div.inform {
+              p {
+                font-size: 1rem;
+              }
+            }
+            div.inform-link {
+              display: flex;
+              margin-top: 1rem;
+              a {
+                img {
+                  width: 3em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    div.self {
+      div.contain {
+        display: flex;
+        justify-content: center;
+        margin-top: -7rem;
+        section.left {
+          position: relative;
+          margin-top: 5rem;
+          div.title {
+            position: absolute;
+            //left: 2rem;
+            top: 3rem;
+          }
+          width: 100%;
+          div.np {
+            margin-top: 5rem;
+            margin-bottom: -8rem;
+            border: 0;
+            div.image-container {
+              width: 50vw;
+              height: 50vw;
+
+              img.personal {
+                width: 50vw;
+                height: 50vw;
+                transition: all 0.3s;
+              }
+              img.personal:hover {
+                transform: scale(1.2);
+              }
+            }
+
+            p {
+              //position: absolute;
+              font-size: 10px;
+              left: 220px;
+            }
+          }
+        }
+        section.right {
+          flex-basis: 400px;
+          margin-top: 10rem;
+          flex-grow: 1;
+          div {
+            div.inform {
+              p {
+                font-size: 1rem;
+              }
+            }
+            div.inform-link {
+              display: flex;
+              margin-top: 1rem;
+              a {
+                img {
+                  width: 3em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//下拉選單動畫
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

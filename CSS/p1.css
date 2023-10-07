@@ -1,0 +1,218 @@
+main {
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+}
+main div.exp {
+  width: 80%;
+  margin: auto;
+}
+main div.exp div.title {
+  position: relative;
+  flex-direction: row;
+  justify-content: left;
+}
+main div.exp div.title p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+main div.exp div.title hr {
+  width: 80px;
+  border: solid 2px rgba(156, 156, 156, 0.937254902);
+  margin-bottom: 1.5rem;
+}
+main div.exp div.contain {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+main div.exp div.contain hr {
+  position: absolute;
+  top: 7.1rem;
+  width: 70%;
+  border: solid 5px rgb(250, 182, 81);
+}
+main div.exp div.contain div.back {
+  z-index: 0;
+  width: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main div.exp div.contain div.back div.cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(250, 159, 23);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+}
+main div.exp div.contain div.back div.cont img {
+  width: 6rem;
+  border-radius: 50%;
+  margin: auto;
+}
+main div.exp div.contain div.back p {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+main div.workexp {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+main div.workexp div.title {
+  position: relative;
+  flex-direction: column;
+  justify-content: left;
+}
+main div.workexp div.title p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+main div.workexp div.title hr {
+  width: 80px;
+  border: solid 2px rgba(156, 156, 156, 0.937254902);
+  margin-bottom: 1.5rem;
+}
+main div.workexp div.job {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+main div.workexp div.job div.s {
+  display: flex;
+  flex-direction: column;
+  border-width: 2px;
+  border-style: solid;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: black;
+  border-right-color: white;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+}
+main div.workexp div.job div.s div.stitle {
+  flex-grow: 0;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+main div.workexp div.job div.s div.stitle p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+main div.workexp div.job div.s div.contain {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+main div.workexp div.job div.s div.contain div.dsth {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+main div.workexp div.job div.s div.contain div.dsth ul li {
+  font-weight: bold;
+}
+main div.workexp div.job div.s div.contain div.dsth p {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  main div.exp div.title hr {
+    width: 100px;
+  }
+  main div.exp div.contain {
+    width: 100%;
+  }
+  main div.exp div.contain hr.line {
+    opacity: 0;
+  }
+  main div.exp div.contain div.back {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+  }
+  main div.exp div.contain div.back div.cont {
+    width: 6rem;
+    height: 6rem;
+  }
+  main div.exp div.contain div.back div.cont img {
+    width: 5rem;
+  }
+  main div.exp div.contain div.back p {
+    margin-top: 1rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 540px) {
+  main {
+    position: absolute;
+    top: 5rem;
+  }
+  main #exp * {
+    font-size: 1.5rem;
+  }
+  main #workexp * {
+    font-size: 1.5rem;
+  }
+  main div.exp div.contain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  main div.exp div.contain hr.line {
+    opacity: 0;
+  }
+  main div.exp div.contain div.back {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border: solid 1px black;
+    border-radius: 15px;
+  }
+  main div.exp div.contain div.back div.cont {
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+  }
+  main div.exp div.contain div.back div.cont img {
+    width: 5rem;
+  }
+  main div.exp div.contain div.back div.cont img.img1 {
+    content: url(../img/school/1.jpg);
+  }
+  main div.exp div.contain div.back div.cont img.img2 {
+    content: url(../img/school/2.jpg);
+  }
+  main div.exp div.contain div.back div.cont img.img3 {
+    content: url(../img/school/3.jpg);
+  }
+  main div.exp div.contain div.back p {
+    margin-left: 2rem;
+  }
+  main div.workexp div.title hr {
+    width: 100px;
+  }
+  main div.workexp div.job div.s div.contain {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=p1.css.map */
