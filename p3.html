@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Pan Kuan Yu (Alan_Pan)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta name="rating" content="General" />
+    <base target="_self" />
+    <meta name="description" content="" />
+    <!-- header -->
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/p3.css" />
+    <title>證照與作品</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./img/logo.jpg" />
+        <a class="dropbtn" id="dropbtn"><img src="./img/menu.png" alt="" /></a>
+        <nav id="box" style="height: 0">
+          <ul>
+            <li><a href="./home.html">自我介紹</a></li>
+            <li><a href="./p1.html">經歷</a></li>
+            <li><a href="./p2.html">專業技能</a></li>
+            <li><a class="active" href="./p3.html">證照/作品</a></li>
+            <li><a href="./p4.html">生活紀錄</a></li>
+            <!-- <li><a href="./p5.html"></a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="licence">
+        <div class="title">
+          <p>證照</p>
+          <hr />
+        </div>
+        <!-- <div class="slideshow-container"> -->
+        <!-- 證照-CCNA -->
+        <div class="contain">
+          <section class="left">
+            <img
+              id="myImg1"
+              class="myImg"
+              src="./img/cirtificate/CCNA.PNG"
+              alt="CCNA"
+            />
+            <div id="myModal1" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" src="./img/cirtificate/CCNA.PNG" />
+              <div id="caption"></div>
+            </div>
+            <!-- <img src="./img/cirtificate/CCNA.PNG" alt="CCNA" /> -->
+          </section>
+          <section class="right">
+            <div>
+              <h2>CCNA</h2>
+              <p class="date">2022/11/17</p>
+              <hr />
+              <p class="intro">
+                在校期間經由學校課程了解到一些簡單的網通設備上的知識後，在大學畢業等當兵的期間報名了CCNA的線上課程並成功通過CCNA的認證考試
+              </p>
+            </div>
+          </section>
+        </div>
+        <!-- 證照-TOEIC -->
+        <div class="contain">
+          <section class="left">
+            <img
+              id="myImg2"
+              class="myImg"
+              src="./img/cirtificate/850.jpg"
+              alt="TOEIC"
+            />
+            <div id="myModal2" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" src="./img/cirtificate/850.jpg" />
+              <div id="caption"></div>
+            </div>
+            <!-- <img src="./img/cirtificate/850.jpg" alt="TOEIC" /> -->
+          </section>
+          <section class="right">
+            <div>
+              <h2>TOEIC Listening and Reading</h2>
+              <p class="date">2022/6/15</p>
+              <hr />
+              <p class="intro">
+                透過不間斷的努力考取到多益850分，雖然距離金色證書只有一步之遙，但我認為我已經足夠努力，期許我可以維持相當的英文水平，並持續去精進自己，學習更多語言相關的知識
+              </p>
+            </div>
+          </section>
+        </div>
+        <!-- 證照-信託 -->
+        <div class="contain">
+          <section class="left">
+            <img
+              id="myImg3"
+              class="myImg"
+              src="./img/cirtificate/信託業務業務人員.PNG"
+              alt="CCNA"
+            />
+            <div id="myModal3" class="modal">
+              <span class="close">&times;</span>
+              <img
+                class="modal-content"
+                src="./img/cirtificate/信託業務業務人員.PNG"
+              />
+              <div id="caption"></div>
+            </div>
+            <!-- <img src="./img/cirtificate/信託業務業務人員.PNG" alt="" /> -->
+          </section>
+          <section class="right">
+            <div>
+              <h2>信託業務</h2>
+              <p class="date">2022/7/15</p>
+              <hr />
+              <p class="intro">
+                在校期間學習財務、經濟相關課程，讓我對於類似的課程蠻有興趣的，剛好等當兵期間想說嘗試看看多增加一些相關知識，就順道去考了這張證照
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- </div> -->
+        <!-- 左右箭頭 -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div class="Works">
+        <div class="btn">
+          <button
+            class="tablink a"
+            onclick="openPage('project1', this, 'orange' )"
+            id="defaultOpen"
+          >
+            專題介紹
+          </button>
+          <button
+            class="tablink b"
+            onclick="openPage('personal_project', this, 'orange')"
+          >
+            個人作品
+          </button>
+        </div>
+
+        <div class="works">
+          <div id="project1" class="tabcontent project">
+            <h3>畢業專題</h3>
+            <div class="inside">
+              <section class="left">
+                <img src="./img/Pro/b5/b5.png" alt="畢業專題" />
+              </section>
+              <section class="right">
+                <h4>專題內容</h4>
+                <p>
+                  設計一款射擊遊戲，以點擊螢幕上隨機出現的目標物去進行使用者分析，透過分析使用者的遊玩成績去分析出使用者的靈敏度、失敗率、排名程度等等，目標使用者是老年人，希望可以藉此遊戲提供老者及其家屬了解他在反應速度上是否有增加或是減少的問題。
+                </p>
+                <div class="inform-link">
+                  <a target="_blank" href="mailto:panguanyu57@gmail.com">
+                    <img class="icon" src="img/cloud.png" />
+                  </a>
+
+                  <a target="_blank" href="https://github.com/Alanpan0115">
+                    <img class="icon" src="img/git.png" />
+                  </a>
+                </div>
+              </section>
+            </div>
+            <hr />
+            <h3>期中專題(前端)-大二(上)</h3>
+            <div class="inside">
+              <section class="left">
+                <img src="./img/Pro/b1/b1.png" alt="畢業專題" />
+              </section>
+              <section class="right">
+                <h4>專題內容</h4>
+                <p>
+                  設計一款射擊遊戲，以點擊螢幕上隨機出現的目標物去進行使用者分析，透過分析使用者的遊玩成績去分析出使用者的靈敏度、失敗率、排名程度等等，目標使用者是老年人，希望可以藉此遊戲提供老者及其家屬了解他在反應速度上是否有增加或是減少的問題。
+                </p>
+                <div class="inform-link">
+                  <a target="_blank" href="mailto:panguanyu57@gmail.com">
+                    <img class="icon" src="img/cloud.png" />
+                  </a>
+
+                  <a target="_blank" href="https://github.com/Alanpan0115">
+                    <img class="icon" src="img/git.png" />
+                  </a>
+                </div>
+              </section>
+            </div>
+            <hr />
+            <h3>期末專題(前端)-大二(上)</h3>
+            <div class="inside">
+              <section class="left">
+                <img src="./img/Pro/b2/b2.png" alt="畢業專題" />
+              </section>
+              <section class="right">
+                <h4>專題內容</h4>
+                <p>
+                  設計一款射擊遊戲，以點擊螢幕上隨機出現的目標物去進行使用者分析，透過分析使用者的遊玩成績去分析出使用者的靈敏度、失敗率、排名程度等等，目標使用者是老年人，希望可以藉此遊戲提供老者及其家屬了解他在反應速度上是否有增加或是減少的問題。
+                </p>
+                <div class="inform-link">
+                  <a target="_blank" href="mailto:panguanyu57@gmail.com">
+                    <img class="icon" src="img/cloud.png" />
+                  </a>
+
+                  <a target="_blank" href="https://github.com/Alanpan0115">
+                    <img class="icon" src="img/git.png" />
+                  </a>
+                </div>
+              </section>
+            </div>
+            <hr />
+            <h3>期末專題(後端)-大二(下)</h3>
+            <div class="inside">
+              <section class="left">
+                <img src="./img/Pro/b3/b3.png" alt="畢業專題" />
+              </section>
+              <section class="right">
+                <h4>專題內容</h4>
+                <p>
+                  設計一款射擊遊戲，以點擊螢幕上隨機出現的目標物去進行使用者分析，透過分析使用者的遊玩成績去分析出使用者的靈敏度、失敗率、排名程度等等，目標使用者是老年人，希望可以藉此遊戲提供老者及其家屬了解他在反應速度上是否有增加或是減少的問題。
+                </p>
+                <div class="inform-link">
+                  <a target="_blank" href="mailto:panguanyu57@gmail.com">
+                    <img class="icon" src="img/cloud.png" />
+                  </a>
+
+                  <a target="_blank" href="https://github.com/Alanpan0115">
+                    <img class="icon" src="img/git.png" />
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div id="personal_project" class="tabcontent project">
+            <h3>個人網頁-大二(上)</h3>
+            <div class="inside">
+              <section class="left">
+                <img src="./img/Pro/b5/b5.png" alt="畢業專題" />
+              </section>
+              <section class="right">
+                <h4>專題內容</h4>
+                <p>
+                  設計一款射擊遊戲，以點擊螢幕上隨機出現的目標物去進行使用者分析，透過分析使用者的遊玩成績去分析出使用者的靈敏度、失敗率、排名程度等等，目標使用者是老年人，希望可以藉此遊戲提供老者及其家屬了解他在反應速度上是否有增加或是減少的問題。
+                </p>
+                <div class="inform-link">
+                  <a target="_blank" href="mailto:panguanyu57@gmail.com">
+                    <img class="icon" src="img/cloud.png" />
+                  </a>
+
+                  <a target="_blank" href="https://github.com/Alanpan0115">
+                    <img class="icon" src="img/git.png" />
+                  </a>
+                </div>
+              </section>
+            </div>
+            <hr />
+            <h3>個人簡歷-大二(上)</h3>
+            <div class="inside">
+              <section class="left">
+                <img src="./img/Pro/b5/b5.png" alt="畢業專題" />
+              </section>
+              <section class="right">
+                <h4>專題內容</h4>
+                <p>
+                  設計一款射擊遊戲，以點擊螢幕上隨機出現的目標物去進行使用者分析，透過分析使用者的遊玩成績去分析出使用者的靈敏度、失敗率、排名程度等等，目標使用者是老年人，希望可以藉此遊戲提供老者及其家屬了解他在反應速度上是否有增加或是減少的問題。
+                </p>
+                <div class="inform-link">
+                  <a target="_blank" href="mailto:panguanyu57@gmail.com">
+                    <img class="icon" src="img/cloud.png" />
+                  </a>
+
+                  <a target="_blank" href="https://github.com/Alanpan0115">
+                    <img class="icon" src="img/git.png" />
+                  </a>
+                </div>
+              </section>
+            </div>
+            <hr />
+            <h3>個人網站-2023/07</h3>
+            <div class="inside">
+              <section class="left">
+                <img src="./img/Pro/b5/b5.png" alt="畢業專題" />
+              </section>
+              <section class="right">
+                <h4>專題內容</h4>
+                <p>
+                  設計一款射擊遊戲，以點擊螢幕上隨機出現的目標物去進行使用者分析，透過分析使用者的遊玩成績去分析出使用者的靈敏度、失敗率、排名程度等等，目標使用者是老年人，希望可以藉此遊戲提供老者及其家屬了解他在反應速度上是否有增加或是減少的問題。
+                </p>
+                <div class="inform-link">
+                  <a target="_blank" href="mailto:panguanyu57@gmail.com">
+                    <img class="icon" src="img/cloud.png" />
+                  </a>
+
+                  <a target="_blank" href="https://github.com/Alanpan0115">
+                    <img class="icon" src="img/git.png" />
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- header下拉按鈕 -->
+  <script
+    src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script type="text/javascript" src="js/dropdown.js"></script>
+  <!-- 設定證照頁面左右切換 -->
+  <script type="text/javascript" src="js/p3_licence.js"></script>
+  <!-- 設定圖片縮放 -->
+  <script type="text/javascript" src="JS/p3_imgcontrol.js"></script>
+  <!-- 作品及切換 -->
+  <script type="text/javascript" src="JS/p3_project.js"></script>
+
+  <!-- 不一定要用，之後要改再加 -->
+  <!-- 當滾輪下移時header顏色變換 -->
+  <!-- <script type="text/javascript" src="JS/app.js"></script> -->
+</html>
