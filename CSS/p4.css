@@ -32,13 +32,15 @@ main div.target div.content {
   flex-direction: column;
   width: 80%;
   margin: auto;
-  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 2px;
   line-height: 2rem;
 }
 main div.target div.content section {
   margin-bottom: 1rem;
+}
+main div.target div.content section.program {
+  font-size: 1.2rem;
 }
 main div.life {
   margin-top: 2rem;
@@ -66,4 +68,63 @@ main div.life div.contain {
   height: 60vh;
   margin: auto;
   border: solid 1px black;
+}
+
+@media (max-width: 900px) {
+  div.target div.title {
+    position: relative;
+    flex-direction: row;
+    justify-content: left;
+    width: 80%;
+    margin: auto;
+  }
+  div.target div.title p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  div.target div.title hr {
+    width: 100px;
+    border: solid 2px rgba(156, 156, 156, 0.937254902);
+    margin-bottom: 1rem;
+  }
+  div.target div.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 2rem;
+  }
+  div.target div.content section {
+    font-size: 20px;
+  }
+  div.life {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  div.life div.title {
+    position: relative;
+    flex-direction: row;
+    justify-content: left;
+    width: 80%;
+    margin: auto;
+  }
+  div.life div.title p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  div.life div.title hr {
+    width: 80px;
+    border: solid 2px rgba(156, 156, 156, 0.937254902);
+    margin-bottom: 1rem;
+  }
+  div.life div.contain {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    border: solid 1px black;
+  }
 }/*# sourceMappingURL=p4.css.map */
