@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 7rem;
+  width: 100%;
+}
+main div.target div.title {
+  position: relative;
+  flex-direction: row;
+  justify-content: left;
+  width: 80%;
+  margin: auto;
+}
+main div.target div.title p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+main div.target div.title hr {
+  width: 100px;
+  border: solid 2px rgba(156, 156, 156, 0.937254902);
+  margin-bottom: 1rem;
+}
+main div.target div.content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 2rem;
+}
+main div.target div.content section {
+  margin-bottom: 1rem;
+}
+main div.life {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main div.life div.title {
+  position: relative;
+  flex-direction: row;
+  justify-content: left;
+  width: 80%;
+  margin: auto;
+}
+main div.life div.title p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+main div.life div.title hr {
+  width: 80px;
+  border: solid 2px rgba(156, 156, 156, 0.937254902);
+  margin-bottom: 1rem;
+}
+main div.life div.contain {
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  border: solid 1px black;
+}/*# sourceMappingURL=p4.css.map */
