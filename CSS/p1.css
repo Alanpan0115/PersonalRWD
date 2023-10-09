@@ -131,6 +131,24 @@ main div.workexp div.job div.s div.contain div.dsth h4 {
   main #workexp * {
     font-size: 1.5rem;
   }
+  main div.exp {
+    margin-top: 1rem;
+  }
+  main div.exp div.title {
+    position: relative;
+    flex-direction: row;
+    justify-content: left;
+  }
+  main div.exp div.title p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  main div.exp div.title hr {
+    width: 100px;
+    border: solid 2px rgba(156, 156, 156, 0.937254902);
+    margin-bottom: 1.5rem;
+  }
   main div.exp div.contain {
     display: flex;
     flex-wrap: wrap;

@@ -159,6 +159,24 @@ main {
     }
 
     div.exp {
+      margin-top: 1rem;
+      // 標題
+      div.title {
+        // border: solid 1px black;
+        position: relative;
+        flex-direction: row;
+        justify-content: left;
+        p {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-bottom: 0.2rem;
+        }
+        hr {
+          width: 100px;
+          border: solid 2px #9c9c9cef;
+          margin-bottom: 1.5rem;
+        }
+      }
       div.contain {
         display: flex;
         flex-wrap: wrap;

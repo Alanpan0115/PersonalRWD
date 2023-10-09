@@ -446,6 +446,7 @@ main {
     top: 5rem;
     height: 800px;
     div.skills {
+      margin-top: 1rem;
       div.title {
         //border: solid 1px black;
 
@@ -455,13 +456,13 @@ main {
         margin: auto;
         p {
           margin-left: 0;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           font-weight: bold;
           margin-bottom: 0.2rem;
         }
         hr {
           margin-left: 0;
-          width: 80px;
+          width: 95px;
           border: solid 2px #9c9c9cef;
           margin-bottom: 1rem;
         }
