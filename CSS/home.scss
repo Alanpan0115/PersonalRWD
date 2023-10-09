@@ -56,7 +56,7 @@ main {
   }
   // 自我介紹
   div.self {
-    width: 90%;
+    width: 80%;
     //border: solid 1px red;
 
     div.contain {
@@ -64,7 +64,7 @@ main {
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-
+      margin: auto;
       section.left {
         width: 25%;
         margin-top: 2rem;
@@ -358,7 +358,7 @@ main {
           div {
             div.inform {
               p {
-                font-size: 1rem;
+                font-size: 0.8rem;
               }
             }
             div.inform-link {

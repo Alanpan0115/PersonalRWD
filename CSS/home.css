@@ -51,13 +51,14 @@ main div.continue_pic ul.S0 div:nth-child(1) {
   animation-delay: 10s;
 }
 main div.self {
-  width: 90%;
+  width: 80%;
 }
 main div.self div.contain {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 main div.self div.contain section.left {
   width: 25%;
@@ -285,7 +286,7 @@ main div.self div.contain section.right div div.inform-link a img {
     flex-grow: 1;
   }
   main div.self div.contain section.right div div.inform p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   main div.self div.contain section.right div div.inform-link {
     display: flex;
