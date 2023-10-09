@@ -287,7 +287,7 @@ main div.Works .works::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   main {
     position: absolute;
     top: 7rem;
@@ -530,7 +530,7 @@ main div.Works .works::-webkit-scrollbar-thumb:hover {
     background-color: transparent;
   }
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   main {
     position: absolute;
     top: 7rem;

@@ -323,7 +323,7 @@ main {
   }
 }
 //平板
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   main {
     position: absolute;
     top: 7rem;
@@ -607,7 +607,7 @@ main {
 
 //手機
 //字體大小記得改大
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   main {
     position: absolute;
     top: 7rem;

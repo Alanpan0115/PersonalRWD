@@ -23,7 +23,7 @@ main div.target div.title p {
   margin-bottom: 0.2rem;
 }
 main div.target div.title hr {
-  width: 100px;
+  width: 120px;
   border: solid 2px rgba(156, 156, 156, 0.937254902);
   margin-bottom: 1rem;
 }
@@ -52,12 +52,12 @@ main div.life div.title {
   margin: auto;
 }
 main div.life div.title p {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
 main div.life div.title hr {
-  width: 80px;
+  width: 100px;
   border: solid 2px rgba(156, 156, 156, 0.937254902);
   margin-bottom: 1rem;
 }
@@ -68,7 +68,7 @@ main div.life div.contain {
   border: solid 1px black;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   div.target div.title {
     position: relative;
     flex-direction: row;
@@ -82,7 +82,7 @@ main div.life div.contain {
     margin-bottom: 0.2rem;
   }
   div.target div.title hr {
-    width: 100px;
+    width: 120px;
     border: solid 2px rgba(156, 156, 156, 0.937254902);
     margin-bottom: 1rem;
   }
@@ -115,7 +115,7 @@ main div.life div.contain {
     margin-bottom: 0.2rem;
   }
   div.life div.title hr {
-    width: 80px;
+    width: 120px;
     border: solid 2px rgba(156, 156, 156, 0.937254902);
     margin-bottom: 1rem;
   }
