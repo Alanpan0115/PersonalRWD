@@ -269,6 +269,9 @@ main div.skills div.bar section.bar2 div.con div.c div.container div.sql {
   main {
     top: 5rem;
   }
+  main div.skills {
+    margin-bottom: 5rem;
+  }
   main div.skills div.title {
     flex-direction: row;
     justify-content: left;

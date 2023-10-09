@@ -97,16 +97,6 @@ main div.workexp div.job div.s {
   margin-bottom: 2rem;
   margin-right: 5rem;
 }
-main div.workexp div.job div.s div.stitle {
-  flex-grow: 0;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
-}
-main div.workexp div.job div.s div.stitle p {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.2rem;
-}
 main div.workexp div.job div.s div.contain {
   display: flex;
   flex: 1;
@@ -119,46 +109,18 @@ main div.workexp div.job div.s div.contain div.dsth {
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 main div.workexp div.job div.s div.contain div.dsth ul li {
-  font-weight: bold;
+  margin-left: 1rem;
 }
-main div.workexp div.job div.s div.contain div.dsth p {
+main div.workexp div.job div.s div.contain div.dsth h4 {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0rem;
 }
 
-@media screen and (max-width: 850px) {
-  main div.exp div.title hr {
-    width: 100px;
-  }
-  main div.exp div.contain {
-    width: 100%;
-  }
-  main div.exp div.contain hr.line {
-    opacity: 0;
-  }
-  main div.exp div.contain div.back {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    justify-content: center;
-  }
-  main div.exp div.contain div.back div.cont {
-    width: 6rem;
-    height: 6rem;
-  }
-  main div.exp div.contain div.back div.cont img {
-    width: 5rem;
-  }
-  main div.exp div.contain div.back p {
-    margin-top: 1rem;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   main {
     position: absolute;
     top: 5rem;
@@ -207,12 +169,22 @@ main div.workexp div.job div.s div.contain div.dsth p {
     content: url(../img/school/3.jpg);
   }
   main div.exp div.contain div.back p {
-    margin-left: 2rem;
+    margin: auto;
+  }
+  main div.workexp {
+    margin: auto;
+  }
+  main div.workexp div.title {
+    margin-right: 1rem;
   }
   main div.workexp div.title hr {
     width: 100px;
   }
   main div.workexp div.job div.s div.contain {
     width: 80vw;
+  }
+  main div.workexp div.job div.s div.contain div.dsth ul li {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=p1.css.map */

@@ -111,16 +111,7 @@ main {
         border-right-color: white;
         margin-bottom: 2rem;
         margin-right: 5rem;
-        div.stitle {
-          flex-grow: 0; //設定0可以讓標題的部分不會延伸
-          margin-left: 1rem;
-          margin-bottom: 0.5rem;
-          p {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0.2rem;
-          }
-        }
+
         div.contain {
           display: flex;
           flex: 1; //設定1可以讓內容把剩餘部分填補
@@ -135,58 +126,19 @@ main {
             flex-wrap: wrap;
             flex-direction: column;
             margin-top: 1rem;
-            margin-left: 1rem;
+            margin-left: 0rem;
 
             ul {
               //list-style-type: disc;
               li {
-                font-weight: bold;
+                margin-left: 1rem;
               }
             }
-            p {
+            h4 {
               margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+              margin-left: 0rem;
             }
-          }
-        }
-      }
-    }
-  }
-}
-
-//設定學習經歷
-//平板螢幕
-@media screen and (max-width: 850px) {
-  main {
-    div.exp {
-      div.title {
-        hr {
-          width: 100px;
-        }
-      }
-      div.contain {
-        width: 100%;
-        hr.line {
-          opacity: 0;
-        }
-        div.back {
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-          width: 100%;
-          margin-bottom: 1.5rem;
-          justify-content: center;
-          //background-color: black;
-          div.cont {
-            width: 6rem;
-            height: 6rem;
-            img {
-              width: 5rem;
-            }
-          }
-          //border: solid 1px black;
-          p {
-            margin-top: 1rem;
-            margin: auto;
           }
         }
       }
@@ -195,7 +147,7 @@ main {
 }
 
 //手機螢幕
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   main {
     position: absolute;
     top: 5rem;
@@ -244,13 +196,15 @@ main {
           }
 
           p {
-            margin-left: 2rem;
+            margin: auto;
           }
         }
       }
     }
     div.workexp {
+      margin: auto;
       div.title {
+        margin-right: 1rem;
         hr {
           width: 100px;
         }
@@ -259,6 +213,14 @@ main {
         div.s {
           div.contain {
             width: 80vw;
+            div.dsth {
+              ul {
+                li {
+                  margin-left: 1.5rem;
+                  margin-right: 1rem;
+                }
+              }
+            }
           }
         }
       }

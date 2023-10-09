@@ -335,13 +335,16 @@ main {
 @media screen and (max-width: 1400px) {
   main {
     top: 5rem;
+
     div.skills {
+      margin-bottom: 5rem;
       div.title {
         // border: solid 1px black;
         flex-direction: row;
         justify-content: left;
         width: 96%;
         margin: auto;
+
         p {
           font-size: 1.2rem;
           font-weight: bold;

@@ -54,7 +54,7 @@ header div nav ul {
   z-index: 5;
 }
 header div nav ul li {
-  width: 7rem;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,7 +109,7 @@ header div nav ul li a.active {
     position: relative;
     display: inline-block;
     display: block;
-    transition: 2s;
+    transition: 1s;
   }
   header div nav {
     display: none;
@@ -131,7 +131,7 @@ header div nav ul li a.active {
     flex-direction: row;
     justify-content: left;
     padding-left: 20px;
-    width: 8rem;
+    width: auto;
     animation: fade-in;
     animation-duration: 1.5s;
   }
@@ -149,7 +149,7 @@ header div nav ul li a.active {
     text-decoration: underline;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   header div {
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ header div nav ul li a.active {
     position: relative;
     display: inline-block;
     display: block;
-    transition: 2s ease-in 1s;
+    transition: 1s ease-in 1s;
   }
   header div nav {
     display: none;
