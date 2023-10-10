@@ -659,7 +659,7 @@ main div.Works .works::-webkit-scrollbar-thumb:hover {
   main div.licence .contain .right div p.intro {
     font-size: 22px;
     letter-spacing: 2px;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
   }
   main div.Works {
     display: flex;
