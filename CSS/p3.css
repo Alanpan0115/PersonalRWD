@@ -762,6 +762,7 @@ main div.Works .works::-webkit-scrollbar-thumb:hover {
   main div.Works div.works div.project div.inside section.right p {
     margin-top: 1rem;
     font-size: 20px;
+    line-height: 1.5rem;
   }
   main div.Works div.works div.project div.inside section.right div.inform-link {
     display: flex;
