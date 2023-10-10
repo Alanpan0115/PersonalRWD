@@ -39,7 +39,6 @@ main div.target div.content {
 main div.target div.content section {
   margin-bottom: 1rem;
   font-size: 1.2rem;
-  line-height: 2.5rem;
 }
 main div.life {
   margin-top: 2rem;
@@ -94,10 +93,12 @@ main div.life div.contain {
     margin: auto;
     font-weight: 500;
     letter-spacing: 2px;
-    line-height: 2rem;
   }
   div.target div.content section {
     font-size: 20px;
+  }
+  div.target div.content section p {
+    line-height: 2.5rem;
   }
   div.life {
     margin-top: 2rem;
