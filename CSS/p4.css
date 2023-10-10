@@ -40,6 +40,9 @@ main div.target div.content section {
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
+main div.target div.content section li {
+  font-weight: bold;
+}
 main div.life {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -91,13 +94,16 @@ main div.life div.contain {
     flex-direction: column;
     width: 80%;
     margin: auto;
-    font-weight: 500;
-    letter-spacing: 2px;
   }
-  div.target div.content section {
+  div.target div.content section li {
     font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+    font-weight: bold;
   }
   div.target div.content section p {
+    font-size: 20px;
+    letter-spacing: 2px;
     line-height: 2.5rem;
   }
   div.life {
