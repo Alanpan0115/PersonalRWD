@@ -654,12 +654,12 @@ main div.Works .works::-webkit-scrollbar-thumb:hover {
   main div.licence .contain .right div p.date {
     font-size: 1.2rem;
     letter-spacing: 2px;
-    line-height: 1.4rem;
+    line-height: 2.5rem;
   }
   main div.licence .contain .right div p.intro {
     font-size: 22px;
     letter-spacing: 2px;
-    line-height: 2.5rem;
+    line-height: 5rem;
   }
   main div.Works {
     display: flex;
