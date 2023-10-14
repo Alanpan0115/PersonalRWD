@@ -158,18 +158,24 @@ header {
 
 @media screen and (max-width: 900px) {
   header {
+    border: solid 1px black;
+    background-color: white;
+    height: 9vh;
     div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
-      border: solid 1px black;
+      border: none;
       background-color: white;
+
       img {
         display: block;
         margin: auto;
         margin-top: 1rem;
         width: 8rem;
+        justify-content: center;
+        align-items: center;
       }
       a.dropbtn {
         cursor: pointer;

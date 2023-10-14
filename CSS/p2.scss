@@ -1,17 +1,15 @@
-header {
-  position: relative;
-}
 /* ------------專業技能--------------- */
 main {
   position: absolute;
   top: 8rem;
   width: 100%;
+  height: auto;
   font-weight: bold;
 
   div.skills {
     //position: relative;
     width: 80%;
-    height: 80vh;
+    height: auto;
     margin: auto;
     //background-color: red;
     //border: solid 1px black;
@@ -444,9 +442,13 @@ main {
   main {
     position: absolute;
     top: 5rem;
-    height: auto;
+    width: auto;
+    height: 100%;
+    //padding-bottom: 5rem;
+    //margin-bottom: 2rem;
     div.skills {
       margin-top: 1rem;
+      margin-bottom: 1rem;
       div.title {
         //border: solid 1px black;
 
@@ -472,11 +474,10 @@ main {
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
-
+        height: 900px;
         // justify-content: space-between;
         section.b {
           margin: auto;
-
           border-radius: 20px;
           background-color: white;
           border: solid;
@@ -493,7 +494,7 @@ main {
           height: 350px;
           margin: auto;
           margin-top: 0;
-          margin-bottom: 2rem;
+          margin-bottom: 0rem;
           font-size: 1.3rem;
 
           div.container {
@@ -528,7 +529,6 @@ main {
           width: 100%;
           margin-top: 0;
           height: auto;
-
           div.con {
             display: flex; /* 設定容器為 Flexbox */
             flex-wrap: wrap; /* 讓子元素換行 */

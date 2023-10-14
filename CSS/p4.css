@@ -46,6 +46,7 @@ main div.target div.content section li {
 main div.life {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  height: 300px;
 }
 main div.life div.title {
   position: relative;
@@ -66,9 +67,51 @@ main div.life div.title hr {
 }
 main div.life div.contain {
   width: 80%;
-  height: 60vh;
+  height: auto;
   margin: auto;
-  border: solid 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main div.life div.contain div.container {
+  width: 30%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+main div.life div.contain div.container div.imageBox {
+  position: relative;
+  width: 100%;
+  transition: 0.3s;
+}
+main div.life div.contain div.container div.imageBox img {
+  height: auto;
+  width: 100%;
+}
+main div.life div.contain div.container div.imageBox div.textBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(156, 156, 156, 0.9);
+  transition: 0.5s;
+  opacity: 0;
+}
+main div.life div.contain div.container div.imageBox div.textBox h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+}
+main div.life div.contain div.container .imageBox:hover .textBox {
+  opacity: 100%;
 }
 
 @media screen and (max-width: 900px) {
@@ -109,6 +152,7 @@ main div.life div.contain {
   div.life {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    height: 300px;
   }
   div.life div.title {
     position: relative;
@@ -123,14 +167,57 @@ main div.life div.contain {
     margin-bottom: 0.2rem;
   }
   div.life div.title hr {
-    width: 120px;
+    width: 100px;
     border: solid 2px rgba(156, 156, 156, 0.937254902);
     margin-bottom: 1rem;
   }
   div.life div.contain {
     width: 80%;
-    height: 60vh;
+    height: auto;
     margin: auto;
-    border: solid 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  div.life div.contain div.container {
+    width: 30%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  div.life div.contain div.container div.imageBox {
+    position: relative;
+    width: 100%;
+    transition: 0.3s;
+  }
+  div.life div.contain div.container div.imageBox img {
+    height: auto;
+    width: 100%;
+  }
+  div.life div.contain div.container div.imageBox div.textBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(156, 156, 156, 0.9);
+    transition: 0.5s;
+    opacity: 0;
+  }
+  div.life div.contain div.container div.imageBox div.textBox h1 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+  }
+  div.life div.contain div.container .imageBox:hover .textBox {
+    opacity: 100%;
   }
 }/*# sourceMappingURL=p4.css.map */

@@ -1,18 +1,15 @@
 @charset "UTF-8";
-header {
-  position: relative;
-}
-
 /* ------------專業技能--------------- */
 main {
   position: absolute;
   top: 8rem;
   width: 100%;
+  height: auto;
   font-weight: bold;
 }
 main div.skills {
   width: 80%;
-  height: 80vh;
+  height: auto;
   margin: auto;
 }
 main div.skills div.title {
@@ -358,10 +355,12 @@ main div.skills div.bar section.bar2 div.con div.c div.container div.sql {
   main {
     position: absolute;
     top: 5rem;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
   main div.skills {
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   main div.skills div.title {
     flex-direction: row;
@@ -386,6 +385,7 @@ main div.skills div.bar section.bar2 div.con div.c div.container div.sql {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    height: 900px;
   }
   main div.skills div.bar section.b {
     margin: auto;
@@ -405,7 +405,7 @@ main div.skills div.bar section.bar2 div.con div.c div.container div.sql {
     height: 350px;
     margin: auto;
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     font-size: 1.3rem;
   }
   main div.skills div.bar section.bar1 div.container {

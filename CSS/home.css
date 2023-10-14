@@ -111,7 +111,7 @@ main div.self div.contain section.right {
   flex-direction: column;
   width: 70%;
   margin-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 main div.self div.contain section.right div p.intro {
   font-family: Microsoft JhengHei;
@@ -244,7 +244,7 @@ main div.self div.contain section.right div div.inform-link a img {
     width: 3em;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   main div.self div.contain {
     display: flex;
     justify-content: center;
