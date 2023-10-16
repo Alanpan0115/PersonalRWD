@@ -68,14 +68,13 @@ main {
       }
     }
     div.contain {
-      width: 80%;
-      height: auto;
-      margin: auto;
-
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-around;
+      width: 80%;
+      height: auto;
+      margin: auto;
 
       div.container {
         width: 30%;
@@ -121,118 +120,121 @@ main {
   }
 }
 @media screen and (max-width: 900px) {
-  div.target {
-    div.title {
-      //   border: solid 1px black;
-      position: relative;
-      flex-direction: row;
-      justify-content: left;
-      width: 80%;
-      margin: auto;
-      p {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 0.2rem;
-      }
-      hr {
-        width: 120px;
-        border: solid 2px #9c9c9cef;
-        margin-bottom: 1rem;
-      }
-    }
-    div.content {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      margin: auto;
-
-      section {
-        //line-height: 5rem;
-        li {
-          font-size: 22px;
-          letter-spacing: 2px;
-          line-height: 2.5rem;
-          font-weight: bold;
-        }
+  main {
+    div.target {
+      div.title {
+        //   border: solid 1px black;
+        position: relative;
+        flex-direction: row;
+        justify-content: left;
+        width: 80%;
+        margin: auto;
         p {
-          font-size: 22px;
-          letter-spacing: 2px;
-          line-height: 2.5rem;
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 0.2rem;
+        }
+        hr {
+          width: 120px;
+          border: solid 2px #9c9c9cef;
+          margin-bottom: 1rem;
+        }
+      }
+      div.content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+
+        section {
+          //line-height: 5rem;
+          li {
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 2.5rem;
+            font-weight: bold;
+          }
+          p {
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 2.5rem;
+          }
         }
       }
     }
-  }
-  div.life {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    height: 300px;
-    div.title {
-      //   border: solid 1px black;
-      position: relative;
-      flex-direction: row;
-      justify-content: left;
-      width: 80%;
-      margin: auto;
-      p {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 0.2rem;
+    div.life {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      height: 300px;
+      div.title {
+        //   border: solid 1px black;
+        position: relative;
+        flex-direction: row;
+        justify-content: left;
+        width: 80%;
+        margin: auto;
+        p {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 0.2rem;
+        }
+        hr {
+          width: 100px;
+          border: solid 2px #9c9c9cef;
+          margin-bottom: 1rem;
+        }
       }
-      hr {
-        width: 100px;
-        border: solid 2px #9c9c9cef;
-        margin-bottom: 1rem;
-      }
-    }
-    div.contain {
-      width: 80%;
-      height: auto;
-      margin: auto;
+      div.contain {
+        width: 80%;
+        height: auto;
+        margin: auto;
 
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-around;
+        display: flex;
 
-      div.container {
-        width: 30%;
-        margin-bottom: 1rem;
-        overflow: hidden;
-        div.imageBox {
-          position: relative;
-          width: 100%;
-          transition: 0.3s;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
 
-          img {
-            height: auto;
+        div.container {
+          width: 35vw;
+          margin-bottom: 1rem;
+          overflow: hidden;
+          div.imageBox {
+            position: relative;
             width: 100%;
-          }
-          div.textBox {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            background-color: rgba(156, 156, 156, 0.9);
-            transition: 0.5s;
-            opacity: 0;
-            h1 {
-              font-size: 18px;
-              margin: 0;
-              padding: 0;
-              position: absolute;
-              width: 100%;
+            transition: 0.3s;
+
+            img {
               height: auto;
-              top: 50%;
-              left: 50%;
-              transform: translateY(-50%) translateX(-50%);
-              color: #fff;
+              width: 100%;
+            }
+            div.textBox {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              background-color: rgba(156, 156, 156, 0.9);
+              transition: 0.5s;
+              opacity: 0;
+              h1 {
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                width: 100%;
+                height: auto;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                color: #fff;
+                font-size: 1rem;
+              }
             }
           }
-        }
-        .imageBox:hover .textBox {
-          opacity: 100%;
+          .imageBox:hover .textBox {
+            opacity: 100%;
+          }
         }
       }
     }

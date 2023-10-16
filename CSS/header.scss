@@ -83,7 +83,7 @@ header {
       flex-direction: column;
       justify-content: center;
       position: relative;
-      border: solid 1px black;
+      //border: solid 1px black;
       background-color: white;
       img {
         display: block;
@@ -158,7 +158,7 @@ header {
 
 @media screen and (max-width: 900px) {
   header {
-    border: solid 1px black;
+    //border: solid 1px black;
     background-color: white;
     height: 9vh;
     div {

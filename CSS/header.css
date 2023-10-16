@@ -80,7 +80,6 @@ header div nav ul li a.active {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    border: solid 1px black;
     background-color: white;
   }
   header div img {
@@ -151,7 +150,6 @@ header div nav ul li a.active {
 }
 @media screen and (max-width: 900px) {
   header {
-    border: solid 1px black;
     background-color: white;
     height: 9vh;
   }

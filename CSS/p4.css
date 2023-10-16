@@ -66,13 +66,13 @@ main div.life div.title hr {
   margin-bottom: 1rem;
 }
 main div.life div.contain {
-  width: 80%;
-  height: auto;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  width: 80%;
+  height: auto;
+  margin: auto;
 }
 main div.life div.contain div.container {
   width: 30%;
@@ -115,63 +115,63 @@ main div.life div.contain div.container .imageBox:hover .textBox {
 }
 
 @media screen and (max-width: 900px) {
-  div.target div.title {
+  main div.target div.title {
     position: relative;
     flex-direction: row;
     justify-content: left;
     width: 80%;
     margin: auto;
   }
-  div.target div.title p {
+  main div.target div.title p {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.2rem;
   }
-  div.target div.title hr {
+  main div.target div.title hr {
     width: 120px;
     border: solid 2px rgba(156, 156, 156, 0.937254902);
     margin-bottom: 1rem;
   }
-  div.target div.content {
+  main div.target div.content {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: auto;
   }
-  div.target div.content section li {
+  main div.target div.content section li {
     font-size: 22px;
     letter-spacing: 2px;
     line-height: 2.5rem;
     font-weight: bold;
   }
-  div.target div.content section p {
+  main div.target div.content section p {
     font-size: 22px;
     letter-spacing: 2px;
     line-height: 2.5rem;
   }
-  div.life {
+  main div.life {
     margin-top: 2rem;
     margin-bottom: 2rem;
     height: 300px;
   }
-  div.life div.title {
+  main div.life div.title {
     position: relative;
     flex-direction: row;
     justify-content: left;
     width: 80%;
     margin: auto;
   }
-  div.life div.title p {
+  main div.life div.title p {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.2rem;
   }
-  div.life div.title hr {
+  main div.life div.title hr {
     width: 100px;
     border: solid 2px rgba(156, 156, 156, 0.937254902);
     margin-bottom: 1rem;
   }
-  div.life div.contain {
+  main div.life div.contain {
     width: 80%;
     height: auto;
     margin: auto;
@@ -180,21 +180,21 @@ main div.life div.contain div.container .imageBox:hover .textBox {
     flex-direction: row;
     justify-content: space-around;
   }
-  div.life div.contain div.container {
-    width: 30%;
+  main div.life div.contain div.container {
+    width: 35vw;
     margin-bottom: 1rem;
     overflow: hidden;
   }
-  div.life div.contain div.container div.imageBox {
+  main div.life div.contain div.container div.imageBox {
     position: relative;
     width: 100%;
     transition: 0.3s;
   }
-  div.life div.contain div.container div.imageBox img {
+  main div.life div.contain div.container div.imageBox img {
     height: auto;
     width: 100%;
   }
-  div.life div.contain div.container div.imageBox div.textBox {
+  main div.life div.contain div.container div.imageBox div.textBox {
     position: absolute;
     top: 0;
     left: 0;
@@ -205,8 +205,7 @@ main div.life div.contain div.container .imageBox:hover .textBox {
     transition: 0.5s;
     opacity: 0;
   }
-  div.life div.contain div.container div.imageBox div.textBox h1 {
-    font-size: 18px;
+  main div.life div.contain div.container div.imageBox div.textBox h1 {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -216,8 +215,9 @@ main div.life div.contain div.container .imageBox:hover .textBox {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     color: #fff;
+    font-size: 1rem;
   }
-  div.life div.contain div.container .imageBox:hover .textBox {
+  main div.life div.contain div.container .imageBox:hover .textBox {
     opacity: 100%;
   }
 }/*# sourceMappingURL=p4.css.map */
