@@ -178,7 +178,9 @@ main div.skills div.bar section.bar2 div.con div.c div.container div.skills {
   border-radius: 20px;
 }
 main div.skills div.bar section.bar2 div.con div.c div.container div.skills p {
-  font-size: 6px;
+  font-size: 1rem;
+  height: 1rem;
+  margin: 0;
   margin-right: 10px;
 }
 main div.skills div.bar section.bar2 div.con div.c div.container div.html {
@@ -452,6 +454,8 @@ main div.skills div.bar section.bar2 div.con div.c div.container div.sql {
     font-size: 1.4rem;
   }
   main div.skills div.bar section.bar2 div.con div.c div.container div.skills p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
-}/*# sourceMappingURL=p2.css.map */
+}
+
+/*# sourceMappingURL=p2.css.map */
